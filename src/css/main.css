@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300;1,600&family=Open+Sans:wght@300&family=Roboto:wght@400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +7,7 @@
 body {
   background-color: #333;
   color: bisque;
+  font-family: "Montserrat", sans-serif;
 }
 
 .header {
@@ -16,4 +18,15 @@ body {
 p {
   font-size: 25px;
   color: #8888;
+}
+
+main {
+  margin: 50px 100px;
+  width: 20%;
+  float: left;
+}
+main .user {
+  margin-bottom: 20px;
+  background-color: rgb(74, 42, 177);
+  padding: 20px;
 }
