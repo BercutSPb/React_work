@@ -1,18 +1,23 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 
-function LoginForm(props) {
+interface IFormInput {
+  email: string;
+  password: string;
+  confirmPassword: string;
+}
+
+const LoginForm: React.FC = (props) => {
   const {
-    register,
+    register, 
     handleSubmit,
     formState: { errors },
-    getValues,
-  } = useForm();
+    getValues
+  } = useForm<IFormInput>();
 
-  const onSubmit = (data) => {
+  const onSubmit = (data: IFormInput) => {
     console.log(data);
   };
-
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
       <div>
